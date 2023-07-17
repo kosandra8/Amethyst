@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@discordjs/voice": "^0.16.0",
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.3.1",
+    "node.js": "^0.0.1-security"
+  },
+  "name": "amethyst",
+  "description": "",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon. /src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
