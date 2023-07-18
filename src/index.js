@@ -15,17 +15,13 @@ client.on('ready' , (c) => {
     console.log(`${c.user.tag} is online.`);
 });
 
-client.on('messageCreate', (message) => {
- 
-    if(message.author.bot) {
-        return;
-    }
+client.on('interactionCreate', (interaction) => {
+    if (!interaction.isChatInputCommand()) return;
 
-    if (message.content === 'hello'){
-        message.reply('hello');
+    if (interaction.commandName === 'wave') {
+        interaction.reply('Hey👋!');
     }
-
-})
+});
 
 
 client.login(process.env.TOKEN);
